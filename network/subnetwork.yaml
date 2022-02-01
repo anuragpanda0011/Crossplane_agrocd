@@ -15,5 +15,3 @@ spec:
         ipCidrRange: 143.16.0.0/16
     networkRef:
       name: brownbag
-  providerConfigRef:
-    name: brownbag
