@@ -8,5 +8,3 @@ spec:
     autoCreateSubnetworks: false
     routingConfig:
       routingMode: REGIONAL
-  providerConfigRef:
-    name: brownbag
