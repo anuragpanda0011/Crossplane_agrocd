@@ -1,0 +1,19 @@
+---
+apiVersion: compute.gcp.crossplane.io/v1beta1
+kind: Subnetwork
+metadata:
+  name: brwonbag
+spec:
+  forProvider:
+    region: us-central1
+    ipCidrRange: "192.168.0.0/24"
+    privateIpGoogleAccess: true
+    secondaryIpRanges:
+      - rangeName: pods
+        ipCidrRange: 10.18.0.0/20
+      - rangeName: services
+        ipCidrRange: 143.16.0.0/16
+    networkRef:
+      name: brwonbag
+  providerConfigRef:
+    name: brwonbag

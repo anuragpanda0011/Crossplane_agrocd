@@ -1,0 +1,12 @@
+---
+apiVersion: compute.gcp.crossplane.io/v1beta1
+kind: Network
+metadata:
+  name: brwonbag
+spec:
+  forProvider:
+    autoCreateSubnetworks: false
+    routingConfig:
+      routingMode: REGIONAL
+  providerConfigRef:
+    name: brwonbag
