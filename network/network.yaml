@@ -2,11 +2,11 @@
 apiVersion: compute.gcp.crossplane.io/v1beta1
 kind: Network
 metadata:
-  name: brwonbag
+  name: brownbag
 spec:
   forProvider:
     autoCreateSubnetworks: false
     routingConfig:
       routingMode: REGIONAL
   providerConfigRef:
-    name: brwonbag
+    name: brownbag

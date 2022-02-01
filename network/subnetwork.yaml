@@ -2,7 +2,7 @@
 apiVersion: compute.gcp.crossplane.io/v1beta1
 kind: Subnetwork
 metadata:
-  name: brwonbag
+  name: brownbag
 spec:
   forProvider:
     region: us-central1
@@ -14,6 +14,6 @@ spec:
       - rangeName: services
         ipCidrRange: 143.16.0.0/16
     networkRef:
-      name: brwonbag
+      name: brownbag
   providerConfigRef:
-    name: brwonbag
+    name: brownbag

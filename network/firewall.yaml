@@ -2,7 +2,7 @@
 apiVersion: compute.gcp.crossplane.io/v1alpha1
 kind: Firewall
 metadata:
-  name: brwonbag
+  name: brownbag
 spec:
   forProvider:
     allowed:
@@ -11,6 +11,6 @@ spec:
       - IPProtocol: icmp
     sourceRanges: ["10.0.0.0/24"]
     networkRef:
-      name: brwonbag
+      name: brownbag
   providerConfigRef:
-    name: brwonbag
+    name: brownbag
