@@ -2,7 +2,7 @@
 apiVersion: compute.gcp.crossplane.io/v1beta1
 kind: Network
 metadata:
-  name: brownbag
+  name: brownbagdemo
 spec:
   forProvider:
     autoCreateSubnetworks: false
